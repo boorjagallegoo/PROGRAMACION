@@ -1,14 +1,11 @@
-
+import java.sql.Date;
 
 public class Alumno extends Persona {
 
-    public int nia; 
+    public int nia;
 
-    public Alumno() {
-
-    };
-
-    public Alumno(int nia) {
+    public Alumno(String dNI, String nombre, String apellidos, Date fechaNacimiento, int nia) {
+        super(dNI, nombre, apellidos, fechaNacimiento);
         this.nia = nia;
     }
 
@@ -25,7 +22,4 @@ public class Alumno extends Persona {
         return "Alumno [nia=" + nia + "]";
     };
 
-    
-    
-    
 }
